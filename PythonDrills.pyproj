@@ -28,6 +28,9 @@
     <Compile Include="ListLessThanThen.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ListOverlap.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="OddOrEven.py">
       <SubType>Code</SubType>
     </Compile>
