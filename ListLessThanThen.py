@@ -15,10 +15,13 @@ Extras:
 '''
 
 def main():
-    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+    numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     n = int(input("Enter a number\n"))
 
-    print(list(filter(lambda x: x > n, a)))
+    # Using filter:
+    print(list(filter(lambda x: x > n, numbers)))
+    # Using list comprehension
+    print([item for item in numbers if item > n])
 
 if __name__ == "__main__":
     main()
