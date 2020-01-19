@@ -7,9 +7,6 @@ try:
     strList = list(str)
     strList.reverse()
 
-    if str == "".join(strList):
-        print("A palindrome.")
-    else:
-        print("Not a palindrome.")
+    print("A palindrome.") if str == "".join(strList) else print("Not a palindrome.")
 except:
     pass

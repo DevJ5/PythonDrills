@@ -25,6 +25,9 @@
     <Compile Include="Divisors.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ListComprehension.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ListLessThanThen.py">
       <SubType>Code</SubType>
     </Compile>
