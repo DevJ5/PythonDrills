@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CharacterInput.py" />
+    <Compile Include="CheckPrimalityFunctions.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Divisors.py">
       <SubType>Code</SubType>
     </Compile>
