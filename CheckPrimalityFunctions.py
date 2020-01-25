@@ -9,14 +9,18 @@ def getNumber(helptext = "Enter a number\n$ "):
     return int(input(helptext))
 
 def checkIsPrime(number):
-    divisor = 2
+    if number == 1:
+        isPrime = False
+
     isPrime = True
+    divisor = 2
     
     while divisor != number:
        if number % divisor == 0:
            isPrime = False
            break
        divisor += 1
+
     return isPrime
 
 def main():
