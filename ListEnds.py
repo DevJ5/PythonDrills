@@ -7,9 +7,7 @@ For practice, write this code inside a function.
 a = [5, 10, 15, 20, 25]
 
 def getFirstAndLast(listOfNumbers):
-    firstAndLast = []
-    firstAndLast.append(listOfNumbers.pop(0))
-    firstAndLast.append(listOfNumbers.pop(len(listOfNumbers) - 1))
-    return firstAndLast
+    return [listOfNumbers[0], listOfNumbers[len(listOfNumbers) - 1]]
 
 print(getFirstAndLast(a))
+
