@@ -28,6 +28,9 @@
     <Compile Include="Divisors.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Fibonacci.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GuessingGameOne.py">
       <SubType>Code</SubType>
     </Compile>
