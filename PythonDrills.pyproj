@@ -49,6 +49,9 @@
     <Compile Include="ListOverlapComprehensions.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ListRemoveDuplicates.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="OddOrEven.py">
       <SubType>Code</SubType>
     </Compile>
