@@ -12,8 +12,8 @@ def main():
     list = []
     lookup = {}
 
-    isDiscreteMathLover = True if input("Do you like discrete math? [n, Y]\n").lower().strip() == "" or 'y' else False
-
+    isDiscreteMathLover = True if input("Do you like discrete math? [n, Y]\n").lower().strip() == 'y' else False
+    
     while True:
         number = getInput("Enter a number or type 'q' to return a list of non duplicates\n")
         if number == 'q':
