@@ -12,24 +12,30 @@ def main():
     list = []
     lookup = {}
 
-    while True:
-        input = getInput("Enter a number or type 'q' to return a list of non duplicates\n")
-        if input == 'q':
-            break
-        if checkNoDuplicate(lookup, input):
-            addToList(list, input)
-            lookup[input] = 1
+    isDiscreteMathLover = True if input("Do you like discrete math? [n, Y]\n").lower().strip() == "" or 'y' else False
 
-    print(list)
+    while True:
+        number = getInput("Enter a number or type 'q' to return a list of non duplicates\n")
+        if number == 'q':
+            break
+        elif isDiscreteMathLover:
+            list.append(int(number))
+        else:
+            if checkNoDuplicate(lookup, number):
+                addToList(list, number)
+                lookup[number] = 1
+
+    if isDiscreteMathLover: print(set(list))
+    else: print(list)
 
 def getInput(message):
     return input(message)
 
-def checkNoDuplicate(lookup, input):
-    return lookup.get(input) == None
+def checkNoDuplicate(lookup, number):
+    return lookup.get(number) == None
 
-def addToList(list, item):
-    list.append(int(item))
+def addToList(list, number):
+    list.append(int(number))
 
 if __name__ == "__main__":
     main()
