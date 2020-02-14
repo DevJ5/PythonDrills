@@ -55,6 +55,9 @@
     <Compile Include="OddOrEven.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ReverseWordOrder.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="RockPaperScissors.py">
       <SubType>Code</SubType>
     </Compile>
