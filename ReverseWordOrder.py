@@ -9,6 +9,16 @@ Then I would see the string:
 shown back to me.
 """
 
+def main():
+    try:
+        sentence = input("Enter a sentence.\n$ ")
+        sentence_list = sentence.split()
+        print(" ".join(sentence_list[::-1]))
+    except:
+        pass
+
+if __name__ == "__main__":
+    main()
 
 
 
