@@ -14,7 +14,7 @@ import string
 
 def main():
     password_length = int(input("How long do you want your password to be?\n$ "))
-    characters = list(string.ascii_letters) + [1,2,3,4,5,6,7,8,9,0]
+    characters = string.ascii_letters + string.digits + string.punctuation
     password = []
 
     for i in range(password_length):
