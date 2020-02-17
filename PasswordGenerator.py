@@ -13,15 +13,20 @@ import random
 import string
 
 def main():
-    password_length = int(input("How long do you want your password to be?\n$ "))
-    characters = string.ascii_letters + string.digits + string.punctuation
-    password = []
+    while True:
+        try:
+            password_length = int(input("How long do you want your password to be?\n$ "))
+            characters = string.ascii_letters + string.digits + string.punctuation
+            password = []
 
-    for i in range(password_length):
-        char = characters[random.randint(0, len(characters))]
-        password.append(str(char))
+            for i in range(password_length):
+                char = characters[random.randint(0, len(characters))]
+                password.append(str(char))
     
-    print(f"You're new password is: {''.join(password)}")
+            print(f"You're new password is: {''.join(password)}")
+            break
+        except Exception as e:
+            print("Enter a valid password length...")
 
 if __name__ == "__main__":
     main()
