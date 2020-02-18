@@ -25,6 +25,9 @@
     <Compile Include="CheckPrimalityFunctions.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CowsAndBulls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Divisors.py">
       <SubType>Code</SubType>
     </Compile>
