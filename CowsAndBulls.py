@@ -13,12 +13,12 @@ import random
 def main():
     try:
         while True:
-            random_int = str(rand.randint(1000, 9999))
+            random_int = str(random.randint(1000, 9999))
             print(random_int)
             guess = input("Enter a 4-digit number\n$ ")
             cows = 0
             bulls = 0
-            for n, i in enumerate(random_int):
+            for i, n in enumerate(random_int):
                 if guess[i] == n:
                     cows += 1
                 else:
@@ -26,10 +26,8 @@ def main():
             print(f"{cows} cows, {bulls} bulls")
             if cows == 4:
                 break
-
-    except Exception:
-        pass
-
+    except Exception as e:
+        print(e)
     
 if __name__ == "__main__":
     main()
