@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BinarySearch.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CharacterInput.py" />
     <Compile Include="CheckPrimalityFunctions.py">
       <SubType>Code</SubType>
